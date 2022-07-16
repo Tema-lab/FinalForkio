@@ -1,0 +1,48 @@
+@import "../../styles/style";
+.image{
+ position: relative;
+ margin-top: 30px;
+ z-index: -1;
+
+}
+.cont{
+    margin-top: 40px;
+}
+.imageText1{
+    width: 330px;
+position: absolute;
+right: 20%;
+left: 60%;
+bottom: 60%;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 44px;
+line-height: 49px;
+/* or 111% */
+
+letter-spacing: 0.005em;
+
+/* Black-1 */
+
+color: #2E3438;
+}
+.imageText2{
+    width: 330px;
+    position: absolute;
+    right: 20%;
+    left: 60%;
+    bottom: 30%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 49px;
+/* identical to box height, or 163% */
+
+    letter-spacing: 0.005em;
+
+/* Black-1 */
+
+    color: #2E3438;
+    }

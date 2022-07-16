@@ -1,0 +1,61 @@
+@import "./src/styles/style";
+
+.search__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 486px;
+  width: 100%;
+  margin: 12px;
+
+  border: 1px solid $lightGrey_1;
+  border-radius: 3px;
+  background-color: $white;
+
+  @media (max-width: 480px) {
+    margin: 12px 30px;
+  }
+
+  .input {
+    width: 100%;
+    margin: 0 13px;
+    border: none;
+    outline: none;
+
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
+
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    outline: none;
+    background-color: $lightGrey_1;
+    color: white;
+    transition: background-color .2s linear;
+
+    i {
+      padding: 7px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $grey;
+    }
+
+    &:active {
+      background-color: $lightGrey_3;
+    }
+  }
+}

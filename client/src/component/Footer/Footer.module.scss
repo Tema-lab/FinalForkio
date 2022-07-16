@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+$main-color: #57646E;
+$text-color: #ffffff;
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    color: $text-color;
+    background-color: $main-color;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 84%;
+        margin: 0 auto;
+    }
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: flex-start;
+    margin-top: 48px;
+    font-style: normal;
+    h5 {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.link {
+    color: $text-color;
+    text-decoration: none;
+    transition: .5s;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.logoContainer {
+    width: 162px;
+    text-align: left;
+    .logo {
+        margin-left: -6px;
+        margin-top: -3px;
+        margin-bottom: -4px;
+        transition: .5s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.adress {
+    margin: 0;
+    width: 140px;
+    text-align: left;
+}
+
+.formTitle {
+    width: 240px;
+    background-image: url(footer_images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 200px 7px;
+    margin-bottom: 7px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 240px;
+    height: 32px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    padding-left: 10px;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        font-size: 12px;
+        color: #000000;
+    }
+    &::content {
+        color: red;
+    }
+}
+
+.inputContainer {
+    display: flex;
+}
+
+.submitBtn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    background-color: #B0B6C0;
+    background-image: url(footer_images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: .5s;
+    &:focus,
+    &:active {
+        outline: none;
+        opacity: .6;
+    }
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.socials {
+    display: flex;
+    margin-top: 30px;
+    a {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        margin-left: 24px;
+    }
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin: 60px auto 0;
+    font-size: 12px;
+    align-items: flex-start;
+    &::before {
+        width: 100%;
+        content: "";
+        border-bottom: 1px solid $text-color;
+    }
+    .text {
+        margin: 20px 0 80px;
+    }
+}

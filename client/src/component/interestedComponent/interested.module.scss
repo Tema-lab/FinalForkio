@@ -1,0 +1,21 @@
+@import "../../styles/style";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.itemContainer{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  &__item{
+
+  }
+
+}
+.items{
+  &__title{
+    font-size: 30px;
+    color: #2E3438;
+    margin: 75px 0 35px 0;
+  }
+}

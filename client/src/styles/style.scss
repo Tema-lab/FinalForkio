@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  //background-color: #61dafb;
+
+  @include medium {
+    max-width: 768px;
+    //background-color: #5ee024;
+  }
+  @include large {
+    max-width: $screen-xl;
+    //background-color: #e01268;
+    //border: 1px solid black;
+  }
+}

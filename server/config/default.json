@@ -1,0 +1,7 @@
+{
+  "port": 5000,
+  "jwtSecret": "artem secret",
+  "mongoUri": "mongodb+srv://Artem:bananaroll123@cluster0.iditi.mongodb.net/app?retryWrites=true&w=majority"
+}
+
+

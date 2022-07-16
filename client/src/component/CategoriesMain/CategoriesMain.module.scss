@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.categories__container {
+  width: 100%;
+  max-width: $screen-xl;
+  margin: 0 auto;
+}
+
+.categories__title {
+  font-size: 30px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #2E3438;
+  margin: 75px 0 35px 0;
+
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
+}
+
+.categories__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+.categories__pic {
+  margin-bottom: 25px;
+}

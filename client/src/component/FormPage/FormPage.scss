@@ -1,0 +1,165 @@
+@import "./src/styles/variables";
+.modal{
+  &__close{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    z-index: -1;
+  }
+}
+.modal-wrapper{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+
+  justify-content: center;
+  transform: scale(0);
+  &__content{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 38px;
+    background-color: $white;
+    width: 384px;
+    height: 800px;
+  }
+  &__title{
+
+    font-size: 16px;
+    font-weight: 400;
+    color: $black;
+  }
+}
+.modal-wrapper.active{
+  transform: scale(1);
+  z-index: 1;
+}
+
+
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  &__text{
+    color: $black;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 23px;
+  }
+}
+.password-remind{
+  background: none;
+  display: flex;
+  margin-top: 27px;
+  border: none;
+  color:  $green;
+  font-size: 14px;
+  font-weight:700;
+}
+.sign-in-btn-container{
+  padding: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-btn{
+  margin: 53px 36px 80px;
+  border-radius: 3px;
+  border: none;
+  background-color: $green;
+  &__text{
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    color: $white;
+    padding: 15px 60px;
+  }
+}
+.input-span{
+  border: 1px solid $lightGrey_1;
+  padding: 8px 14px;
+}
+.input-span::placeholder{
+  font-weight: 400;
+  color: $lightGrey_1;
+  font-size: 14px;
+}
+.lines{
+  overflow: hidden;
+  text-align: center;
+  color: $black;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.lines:before,
+.lines:after {
+  background-color:$lightGrey_1;
+  content: "";
+  display: inline-block;
+  height: 1.2px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+}
+.lines:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.lines:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.lines-wrapper{
+  margin-top: 36px;
+  margin-bottom: 39px;
+}
+.sign-in-with{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  &__btn  {
+    display: flex;
+  }
+}
+.instagram{
+  position: relative;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(239.35deg, #6D52C5 -3.13%, #B53099 30.02%, #D52D7B 51.6%, #FA7412 97.91%);
+  &__text{
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding:14px 34px 14px 60px;
+    margin-bottom: 0;
+  }
+}
+.facebook{
+  position: relative;
+  border: none;
+  border-radius: 3px;
+  background-color: $blue;
+  margin-bottom: 22px;
+  &__text{
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding:14px 34px 14px 60px;
+    margin-bottom: 0;
+  }
+}
+.close-modal-btn{
+  display: flex;
+  justify-content: flex-end;
+}

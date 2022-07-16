@@ -1,0 +1,251 @@
+@import "../../styles/style";
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (max-width: 1000px) {
+    padding-left: 30px;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .form {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  ::first-letter {
+    text-transform: uppercase;
+  }
+
+  .adress {
+    border: 2px solid #d3d7da;
+    border-radius: 2px;
+    width: 480px;
+    padding-left: 20px;
+    height: 80px;
+    margin-bottom: 5px;
+    .option {
+      border: 2px solid #d3d7da;
+      width: 480px;
+      padding-left: 20px;
+      height: 40px;
+      margin-bottom: 15px;
+    }
+  }
+  form {
+    .title {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .info {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+    }
+    .contactInfo {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 14px;
+      margin-top: 20px;
+    }
+    .input {
+      border: 2px solid #d3d7da;
+      border-radius: 2px;
+      width: 480px;
+      padding-left: 20px;
+      height: 40px;
+      margin-bottom: 15px;
+    }
+
+    .delivery {
+      margin-top: 25px;
+      margin-bottom: 11px;
+    }
+    .radio {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 480px;
+      margin-bottom: 15px;
+      .element {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        .button {
+          margin-right: 10px;
+        }
+        .text {
+          width: 210px;
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .orderConfirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 510px;
+    @media (max-width: 1000px) {
+      margin: auto;
+      margin-top: 30px;
+      max-width: 80vw;
+    }
+    .binmenu {
+      background-color: #a0a9af;
+      color: #ffffff;
+      font-size: 18px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+    }
+    .binOrders {
+      background-color: #f5f5f5;
+      overflow-y: scroll;
+      max-height: 350px;
+      .items {
+        padding-left: 40px;
+        height: 40px;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .deliveryCost {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: #57646e;
+      font-weight: bold;
+      font-size: 21px;
+      margin-top: 20px;
+    }
+    .cost {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-weight: bold;
+      color: #007042;
+      font-size: 24px;
+      line-height: 200%;
+      margin-top: 20px;
+    }
+    .button {
+      width: 310px;
+      height: 60px;
+      font-weight: 500;
+      font-size: 17px;
+      background-color: rgba(0, 112, 66, 1);
+      color: #ffffff;
+      border: none;
+      margin-top: 70px;
+      border-radius: 3px;
+    }
+    .button:active {
+      background-color: rgba(0, 112, 66, 0.7);
+    }
+  }
+}
+.element {
+  // display: flex;
+  // flex-direction: row;
+}
+.name {
+  padding-left: 10%;
+  width: 40%;
+}
+.price {
+  padding-left: 10%;
+  width: 40%;
+  // justify-self: flex-end;
+}
+.p1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 160%;
+  /* identical to box height, or 29px */
+
+  color: #000000;
+}
+.p2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 160%;
+  /* or 19px */
+
+  color: #bfbfbf;
+}
+
+.n1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 160%;
+
+  color: #000000;
+}
+.n2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  /* or 19px */
+
+  color: #677283;
+}
+.ordelement {
+  display: inline-block;
+  max-width: 500px;
+  margin-right: 20px;
+  @media (max-width: 1000px) {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 80vw;
+  }
+}
+.modal {
+  position: "absolute";
+  width: 400;
+  border: "2px solid #000";
+}
+table,
+th,
+td {
+  border-bottom: #a0a9af 1px solid;
+}
+.sub {
+  margin-left: -10px;
+  font-size: 12px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+
+//TODO: Нету селектора, применяется ко всему документу
+//::first-letter{
+//    text-transform: uppercase;
+//}
+
+.customSelect {
+  border: 2px solid #d3d7da;
+  border-radius: 2px;
+  width: 480px;
+  padding-left: 20px;
+  height: 80px;
+  margin-bottom: 5px;
+}

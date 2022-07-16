@@ -1,0 +1,109 @@
+@import "./src/styles/style";
+
+.navMenu__list {
+  @include flex(flex, initial, center, initial, row);
+  margin: 0 auto;
+  height: 45px;
+  list-style: none;
+  background-color: $grey;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  li {
+    //display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  li:hover > .navMenu__subList {
+    display: flex;
+  }
+
+  .navMenu__subList {
+    display: none;
+  }
+}
+
+.item__link {
+  display: block;
+  width: 200px;
+  text-align: center;
+  padding: 13px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: $white;
+  transition: background-color .2s linear;
+  &:focus {
+    outline: none;
+  }
+}
+
+li:hover > .item__link,
+.item__link:hover {
+  background-color: $white;
+  color: $grey;
+}
+
+li:focus > .item__link,
+.item__link:focus {
+  background-color: $white;
+  color: $grey;
+}
+
+.navMenu__active {
+  @include flex(flex, wrap, center, center, row);
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: -5px;
+  background-color: $grey;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.navMenu__subList {
+  display: none;
+  flex-direction: column;
+  //position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  list-style: none;
+  padding-left: 0;
+
+  li::after {
+    content: "";
+    //position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    height: 1px;
+    background: $lightGrey_4;
+  }
+
+  .link {
+    display: block;
+    min-width: 170px;
+    width: 100%;
+    padding: 13px;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: initial;
+    white-space: nowrap;
+    background-color: $white;
+    color: $black;
+
+    &:hover {
+      font-weight: bold;
+      background-color: $lightGrey_4;
+      color: $green;
+    }
+  }
+}
